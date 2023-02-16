@@ -1,19 +1,18 @@
-import React from "react";
-import { Card, Header, Tab, List, ListItem } from "semantic-ui-react";
+import { Card, Header, Tab, List, ListItem } from 'semantic-ui-react'
 
 const panes = [
   {
-    menuItem: "Current",
+    menuItem: 'Current',
     render: () => (
       <Tab.Pane attached="false" as="Card">
-        <Card.Content style={{ padding: "15px" }}>
-          <Card.Meta style={{ color: "#14171A" }}>
+        <Card.Content style={{ padding: '15px' }}>
+          <Card.Meta style={{ color: '#14171A' }}>
             <b>Amazon Web Services</b> (March 2021 - Present)
           </Card.Meta>
-          <Card.Description style={{ padding: "10px 0px 0px 0px" }}>
+          <Card.Description style={{ padding: '10px 0px 0px 0px' }}>
             <List>
               <ListItem>
-                As a cloud solutions consultant I help accelerate AWS's growing
+                As a cloud solutions consultant I help accelerate AWS&apos;s growing
                 Local /Education/Not for Profit business in the UK.
               </ListItem>
               <ListItem>
@@ -23,7 +22,7 @@ const panes = [
                 resources.
               </ListItem>
               <ListItem>
-                {" "}
+                {' '}
                 Cloud technology presents a real opportunity to transform
                 service as well as increase operational efficiencies, and I help
                 our customers realise those benefits.
@@ -32,9 +31,9 @@ const panes = [
           </Card.Description>
           <Card.Description>
             <Header
-              as={"h5"}
+              as={'h5'}
               color="grey"
-              style={{ padding: "10px 0px 0px 0px" }}
+              style={{ padding: '10px 0px 0px 0px' }}
             >
               Responsibilities
             </Header>
@@ -65,7 +64,7 @@ const panes = [
               </ListItem>
               <ListItem>
                 Contributing to intellectual property development including case
-                studies, blogs, reference architectures and offering development{" "}
+                studies, blogs, reference architectures and offering development{' '}
               </ListItem>
               <ListItem>
                 Supporting pre-sales activities and the shaping of new
@@ -75,17 +74,17 @@ const panes = [
           </Card.Description>
         </Card.Content>
       </Tab.Pane>
-    ),
+    )
   },
   {
-    menuItem: "Previous",
+    menuItem: 'Previous',
     render: () => (
       <Tab.Pane attached="false" as="Card">
-        <Card.Content style={{ padding: "15px" }}>
-          <Card.Meta style={{ color: "#14171A" }}>
+        <Card.Content style={{ padding: '15px' }}>
+          <Card.Meta style={{ color: '#14171A' }}>
             <b>Tata Consultancy Services</b> (October 2011 - February 2021)
           </Card.Meta>
-          <Card.Description style={{ padding: "10px 0px 0px 0px" }}>
+          <Card.Description style={{ padding: '10px 0px 0px 0px' }}>
             <List>
               <ListItem>
                 As a solution architect working with UK central government I
@@ -106,9 +105,9 @@ const panes = [
           </Card.Description>
           <Card.Description>
             <Header
-              as={"h5"}
+              as={'h5'}
               color="grey"
-              style={{ padding: "10px 0px 0px 0px" }}
+              style={{ padding: '10px 0px 0px 0px' }}
             >
               Responsibilities
             </Header>
@@ -116,7 +115,7 @@ const panes = [
               <ListItem>
                 Responsible for the design and implementation of key business
                 applications for UK central government departments to align with
-                government's Digital strategy.
+                government&apos;s Digital strategy.
               </ListItem>
               <ListItem>
                 Helped customers define long term architecture road-map
@@ -148,22 +147,22 @@ const panes = [
           </Card.Description>
         </Card.Content>
       </Tab.Pane>
-    ),
-  },
-];
+    )
+  }
+]
 const ExperienceCard = () => (
   <Card>
-    <Header style={{ padding: "15px 0px 0px 15px" }}>Experience</Header>
+    <Header style={{ padding: '15px 0px 0px 15px' }}>Experience</Header>
     <Tab
       menu={{
-        color: "blue",
+        color: 'blue',
         fluid: true,
         pointing: true,
-        secondary: true,
+        secondary: true
       }}
       panes={panes}
     />
   </Card>
-);
+)
 
-export default ExperienceCard;
+export default ExperienceCard
