@@ -12,11 +12,7 @@ function App() {
     <div style={{ padding: "10px", height: "100%" }}>
       <Grid>
         <Grid.Row>
-          <Card.Group
-            itemsPerRow={4}
-            stackable
-            style={{ padding: "5px 25px 5px 25px" }}
-          >
+          <Card.Group itemsPerRow={4} stackable style={{ padding: "15px" }}>
             <ProfileCard></ProfileCard>
 
             <AboutMeCard></AboutMeCard>

@@ -181,6 +181,7 @@ const ProjectCards = () => {
       style={{ padding: "15px" }}
       space-between="20"
       rewind="true"
+      autoplay="true"
     >
       {projects.reverse().map((project, index1) => {
         return (
@@ -190,12 +191,14 @@ const ProjectCards = () => {
                 <Card.Description>
                   <Header as={"h3"}>{project.title}</Header>
                 </Card.Description>
-                <Card.Description style={{ padding: "15px 0px 0px 0px" }}>
+                <Card.Description
+                  style={{ padding: "15px 0px 0px 0px", minHeight: 50 }}
+                >
                   <b>Tools </b>: {project.tools}
                 </Card.Description>
               </Card.Content>
               <Card.Content>
-                <Card.Description extra="true">
+                <Card.Description style={{ minHeight: 250 }}>
                   <List bulleted size="medium">
                     {project.responsibilities.map((responsibility, index2) => {
                       return (
